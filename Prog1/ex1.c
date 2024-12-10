@@ -16,9 +16,9 @@ void process(int iter_num, int tnum)
 	Pi = 4*N / X
 	
 	Implementation:
-	Total number of points here = iter_num * tnum, i.e. number of iterations * number of threads.
+	Total number of points here = iter_num i.e. number of iterations
 	Number of points within circle is measured by N.
-	Thus, PI = 4*N / (iter_num * tnum)
+	Thus, PI = 4*N / (iter_num)
 	*/
 	int x=0, y=0; //random x and y coordinates initialized in loop
 	int N = 0; //number of points that lay within circle
@@ -38,7 +38,7 @@ void process(int iter_num, int tnum)
 	printf("%.4f\t",t); //output time taken, precision of 4 decimal places
 	
 	//printf("%d",N);
-	//float PI = (float)(4*N) / (iter_num * tnum);
+	//float PI = (float)(4*N) / (iter_num);
 	//printf("\nPI = %.4f\n",PI);
 	}
 
