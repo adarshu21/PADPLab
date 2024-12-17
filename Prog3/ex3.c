@@ -56,7 +56,7 @@ void Sieve_friendly(long N){
 	bool *X = malloc(sizeof(bool) * N);
 	int root_N = (int)(sqrt(N));
 	
-	int factors[root_N];
+	int factors[root_N];  //array of prime numbers upto root_N
 	int factor_count = 0;
 	
 	//initialize array
@@ -82,7 +82,7 @@ void Sieve_friendly(long N){
 	for(long i=root_N+1; i<N; i+=root_N)
 		{
 		long start;
-		long end = (i+root_N-1) < N ? (i+root_N-1) : N;
+		long end = (i+root_N-1) < N ? (i+root_N-1) : N; //basically min(i+root_N-1, N)
 		for(int j = 0; j<factor_count; j++)
 			{
 			int temp_f = factors[j];
@@ -115,7 +115,7 @@ void Sieve_parallel_friendly(long N){
 	bool *X = malloc(sizeof(bool) * N);
 	int root_N = (int)(sqrt(N));
 	
-	int factors[root_N];
+	int factors[root_N];//array of prime numbers upto root_N
 	int factor_count = 0;
 	
 	//initialize array
@@ -142,7 +142,7 @@ void Sieve_parallel_friendly(long N){
 	for(long i=root_N+1; i<N; i+=root_N)
 		{
 		long start;
-		long end = (i+root_N-1) < N ? (i+root_N-1) : N;
+		long end = (i+root_N-1) < N ? (i+root_N-1) : N;  //basically min(i+root_N-1, N)
 		for(int j = 0; j<factor_count; j++)
 			{
 			int temp_f = factors[j];
