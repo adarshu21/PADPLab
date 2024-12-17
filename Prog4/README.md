@@ -18,10 +18,14 @@ Usage:
 
 
 Differences between Static, Dynamic, Guided Scheduling:  
-![Difference Table](./Static_Dynamic_Guided.png)  
+![Difference Table](./InfoImage/Static_Dynamic_Guided.png)  
+
+
 
 Information about Luma components:  
-![https://en.wikipedia.org/wiki/Luma_(video)](./Luma_info.png)  
+![https://en.wikipedia.org/wiki/Luma_(video)](./InfoImage/Luma_info.png)  
 
-Comparision between normal greyscaling vs Luma adjustment for BT.709 standards:  
-![Image.png](./Greyscale_vs_BT709.png)  
+
+
+Comparision between normal greyscaling(left) vs Luma adjustment for BT.709 standards(right):  
+![Image.png](./InfoImage/Greyscale_vs_BT709.png)  
