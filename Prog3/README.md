@@ -1,5 +1,8 @@
 Implement Sieve of Eratosthenes to find all prime numbers up to N (input).
 
+To run:  
+<pre>./a.out {enter number here}</pre>  
+
 Implement cache-unfriendly and cache-friendly versions, compare performance.  
 Parallelize cache-friendly version, compare performance.
 
@@ -26,6 +29,4 @@ Now, split the remaining numbers from root(N) to N into segments.
 Eg) split as: root(N)+1 to 2*root(N), 2*root(N)+1 to 3*root(N) and so on...  
 Use the primes computed from 1 to root(N) to filter out all composite numbers present in the segments.  
 The numbers that still remain will be primes.  
-   
-To run:  
-./a.out {enter number here}  
+
