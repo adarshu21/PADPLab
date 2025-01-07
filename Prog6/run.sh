@@ -1,10 +1,10 @@
 #!/bin/bash
 
 declare -A my_files
-my_files["1.25"]="Passage_1Mb.txt"
-my_files["2.5"]="Passage_2Mb.txt"
-my_files["5"]="Passage_5Mb.txt"
-my_files["10"]="Passage_10Mb.txt"
+my_files["1.25"]="Passage_1MB.txt"
+my_files["2.5"]="Passage_2MB.txt"
+my_files["5"]="Passage_5MB.txt"
+my_files["10"]="Passage_10MB.txt"
 
 #arr_size=(100 1000 10000 100000 1000000)
 keys=("1.25" "2.5" "5" "10")
