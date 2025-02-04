@@ -59,7 +59,7 @@ int main(int argc, char *argv[]){
 	clock_gettime(CLOCK_MONOTONIC, &start);
 	#pragma acc kernels
 	{
-	#pragma acc data copy(T[0:n2], T_new[0:n2])
+	#pragma acc data copy(T[0:n2*n2], T_new[0:n2*n2])
 	for(int x=1; x<=max_iter && max_diff>tol; x++) //iterate max_iter times or until max_diff<=tolerance
 		{
 		max_diff = 0; //reinitialize max difference to 0
@@ -76,7 +76,7 @@ int main(int argc, char *argv[]){
 			}
 		temp = T;
 		T = T_new;
-		T_new = T;
+		T_new = temp;
 //		print_arr(T,n2);
 //		printf("\n");
 		}

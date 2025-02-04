@@ -70,7 +70,7 @@ int main(int argc, char *argv[]){
 			}
 		temp = T;
 		T = T_new;
-		T_new = T;
+		T_new = temp;
 		print_arr(T,n2); printf("\n");
 		}
 	clock_gettime(CLOCK_MONOTONIC, &end);
