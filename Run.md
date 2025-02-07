@@ -13,6 +13,10 @@ gcc -fopenmp ex2.c
 gcc -fopenmp ex3.c -lm
 ./a.out 1000000
 
+4
+gcc -fopenmp ex4.c -lgd
+/a.out rvce.png output2.png
+
 5
 mpicc ex5.c
 mpirun -np 4 a.out
